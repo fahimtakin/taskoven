@@ -4,6 +4,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.TextView
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +16,13 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
+
+        val mTextView = findViewById<TextView>(R.id.tv_app_name)
+
         val typeFace: Typeface = Typeface.createFromAsset(assets, "CrazyJazzy.ttf")
 
-        //typeface = typeFace
+        mTextView.typeface = typeFace
+
 
     }
 }
