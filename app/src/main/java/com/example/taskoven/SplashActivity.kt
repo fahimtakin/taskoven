@@ -1,8 +1,11 @@
 package com.example.taskoven
 
+import android.content.Intent
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.WindowManager
 import android.widget.TextView
 
@@ -23,6 +26,17 @@ class SplashActivity : AppCompatActivity() {
 
         mTextView.typeface = typeFace
 
+
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+
+                // Start the Intro Activity
+                startActivity(Intent(this, IntroActivity::class.java))
+
+                // Call this when your activity is done and should be closed.
+                finish()
+
+            }, 2500)
 
     }
 }
