@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "998070864119",
+    "project_id": "taskoven-82ddf",
+    "storage_bucket": "taskoven-82ddf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998070864119:android:eb039736e6c0f41dcdabf2",
+        "android_client_info": {
+          "package_name": "gr.georkouk.taskoven"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcULqLR9MrWFJkdouUE5vrYYi4F8xVgRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

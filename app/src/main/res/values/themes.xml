@@ -1,9 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyTrello" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorTertiary">@color/colorAccent</item>
 
-    <style name="Theme.Taskoven" parent="android:Theme.Material.Light.NoActionBar" />
-    <style name="Theme.Taskoven.NoActionBar">
+    </style>
+
+    <style name="Theme.MyTrello" parent="Base.Theme.MyTrello" />
+
+    <style name="Theme.MyTrello.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="Theme.MyTrello.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyTrello.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
